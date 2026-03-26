@@ -1,3 +1,8 @@
 home-mockup.html
 AGENT_GUIDELINES.md
 node_modules
+dist/
+.vite/
+.env
+*.local
+.DS_Store
