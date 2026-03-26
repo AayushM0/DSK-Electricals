@@ -38,7 +38,7 @@ export default function ProductsPage() {
             />
 
             {/* Main Layout */}
-            <div className="flex min-h-[600px]">
+            <div className="flex flex-col md:flex-row min-h-[600px]">
                 <ProductSidebar
                     filters={PRODUCT_FILTERS}
                     activeFilterId={activeFilterId}
@@ -46,11 +46,11 @@ export default function ProductsPage() {
                 />
 
                 {/* Product Grid */}
-                <main className="flex-1 p-12 min-w-0" aria-label="Product listings">
+                <main className="flex-1 p-4 sm:p-8 lg:p-12 min-w-0" aria-label="Product listings">
                     {visibleCategories.map((category) => (
                         <section key={category.categoryId} className="mb-16 last:mb-0">
 
-                            <header className="flex items-baseline gap-5 mb-7 pb-4 border-b border-border-cream">
+                            <header className="flex items-baseline gap-4 md:gap-5 mb-7 pb-4 border-b border-border-cream">
                                 <h2 className="font-serif text-[clamp(24px,3vw,32px)] font-semibold text-ink">
                                     {category.categoryName}
                                 </h2>
@@ -59,7 +59,7 @@ export default function ProductsPage() {
                                 </span>
                             </header>
 
-                            <div className="grid grid-cols-3 gap-5">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                                 {category.items.map((product, i) => (
                                     <ProductCard
                                         key={product.id}

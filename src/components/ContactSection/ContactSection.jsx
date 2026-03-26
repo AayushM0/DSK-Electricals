@@ -52,10 +52,10 @@ ${formData.details || 'N/A'}
     }
 
     return (
-        <div className="grid grid-cols-[1fr_1.3fr] min-h-[560px]">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.3fr] min-h-[560px]">
 
-            {/* LEFT: DETAILS (unchanged) */}
-            <div className="bg-navy pt-[72px] pb-[72px] px-12 relative overflow-hidden">
+            {/* LEFT: DETAILS */}
+            <div className="bg-navy py-16 md:py-[72px] px-4 md:px-8 lg:px-12 relative overflow-hidden">
                 <div className="relative z-10">
                     <Reveal>
                         <p className="flex items-center gap-[10px] text-[10px] tracking-[0.22em] uppercase text-gold mb-[10px] before:content-[''] before:w-6 before:h-[0.5px] before:bg-gold">
@@ -116,7 +116,7 @@ ${formData.details || 'N/A'}
             </div>
 
             {/* RIGHT: FORM */}
-            <div className="bg-cream pt-[72px] pb-[72px] px-14 border-l border-border-cream">
+            <div className="bg-cream py-16 md:py-[72px] px-4 md:px-8 lg:px-14 border-t lg:border-t-0 lg:border-l border-border-cream">
 
                 <Reveal>
                     <p className="flex items-center gap-[10px] text-[10px] tracking-[0.22em] uppercase text-gold mb-[10px]">
@@ -138,16 +138,16 @@ ${formData.details || 'N/A'}
 
                 <Reveal className="flex flex-col gap-3.5">
 
-                    <div className="flex gap-3.5">
-                        <input name="name" placeholder="Full name *" onChange={handleChange} className="flex-1 bg-cream-dark px-4 py-3" />
-                        <input name="phone" placeholder="Phone number *" onChange={handleChange} className="flex-1 bg-cream-dark px-4 py-3" />
+                    <div className="flex flex-col sm:flex-row gap-3.5">
+                        <input name="name" placeholder="Full name *" onChange={handleChange} className="flex-1 w-full bg-cream-dark px-4 py-3 min-w-0" />
+                        <input name="phone" placeholder="Phone number *" onChange={handleChange} className="flex-1 w-full bg-cream-dark px-4 py-3 min-w-0" />
                     </div>
 
                     <input name="email" placeholder="Email" onChange={handleChange} className="bg-cream-dark px-4 py-3" />
 
-                    <div className="flex gap-3.5">
-                        <input name="requirement" placeholder="Requirement *" onChange={handleChange} className="flex-1 bg-cream-dark px-4 py-3" />
-                        <input name="quantity" placeholder="Quantity" onChange={handleChange} className="flex-1 bg-cream-dark px-4 py-3" />
+                    <div className="flex flex-col sm:flex-row gap-3.5">
+                        <input name="requirement" placeholder="Requirement *" onChange={handleChange} className="flex-1 w-full bg-cream-dark px-4 py-3 min-w-0" />
+                        <input name="quantity" placeholder="Quantity" onChange={handleChange} className="flex-1 w-full bg-cream-dark px-4 py-3 min-w-0" />
                     </div>
 
                     <textarea name="details" placeholder="Additional details..." onChange={handleChange} className="bg-cream-dark px-4 py-3 min-h-[100px]" />

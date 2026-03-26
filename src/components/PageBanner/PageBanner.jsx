@@ -7,7 +7,7 @@ export default function PageBanner({
 }) {
     return (
         <div
-            className="px-12 pt-20 pb-16 relative overflow-hidden bg-navy bg-cover bg-center"
+            className="px-4 md:px-8 lg:px-12 pt-16 md:pt-20 pb-12 md:pb-16 relative overflow-hidden bg-navy bg-cover bg-center"
             style={
                 backgroundImage
                     ? { backgroundImage: `url(${backgroundImage})` }
@@ -19,7 +19,7 @@ export default function PageBanner({
 
             {/* Ghost text */}
             <div
-                className="absolute font-serif text-[180px] font-bold right-[-20px] bottom-[-40px] leading-none pointer-events-none z-0 ghost-text-white"
+                className="absolute font-serif text-[100px] md:text-[180px] font-bold right-[-10px] md:right-[-20px] bottom-[-20px] md:bottom-[-40px] leading-none pointer-events-none z-0 ghost-text-white"
                 aria-hidden="true"
             >
                 {ghostText}

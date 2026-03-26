@@ -14,14 +14,14 @@ export default function HeroSection() {
 
             {/* Ghost oversized word */}
             <p
-                className="absolute font-serif text-[clamp(120px,22vw,260px)] font-bold right-[-40px] bottom-[-40px] leading-none pointer-events-none tracking-[-4px] z-10 ghost-text-white animate-ghost-drift"
+                className="absolute font-serif text-[clamp(80px,22vw,260px)] font-bold right-[-20px] md:right-[-40px] bottom-[-20px] md:bottom-[-40px] leading-none pointer-events-none tracking-[-4px] z-10 ghost-text-white animate-ghost-drift"
                 aria-hidden="true"
             >
                 WIRE
             </p>
 
             {/* Main content */}
-            <div className="relative z-20 px-12 max-w-[580px]">
+            <div className="relative z-20 px-4 md:px-8 lg:px-12 max-w-[580px]">
                 <p className="flex items-center gap-3 text-[10px] tracking-[0.22em] uppercase text-gold mb-5 before:content-[''] before:w-8 before:h-[0.5px] before:bg-gold animate-fade-up anim-delay-1">
                     Trusted · Pan-India Distribution
                 </p>
@@ -35,7 +35,7 @@ export default function HeroSection() {
                     Supplying quality electrical products to contractors, dealers and industries across the region.
                 </p>
 
-                <div className="flex gap-[14px] animate-fade-up anim-delay-4">
+                <div className="flex flex-wrap gap-[14px] animate-fade-up anim-delay-4">
                     <Link
                         to="/products"
                         className="bg-gold text-navy-deep text-[11px] font-semibold tracking-[0.1em] uppercase px-7 py-[13px] rounded-[2px] transition-all duration-200 hover:bg-gold-light hover:-translate-y-px"
@@ -52,7 +52,7 @@ export default function HeroSection() {
             </div>
 
             {/* Scroll indicator */}
-            <p className="absolute bottom-7 left-12 z-20 flex items-center gap-[10px] text-[10px] tracking-[0.14em] uppercase text-[#3a5a7a] animate-fade-up anim-delay-5">
+            <p className="absolute bottom-7 left-4 md:left-12 z-20 flex items-center gap-[10px] text-[10px] tracking-[0.14em] uppercase text-[#3a5a7a] animate-fade-up anim-delay-5">
                 <span className="w-10 h-[0.5px] bg-[#3a5a7a]" aria-hidden="true" />
                 Scroll
             </p>

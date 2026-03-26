@@ -7,7 +7,7 @@ function ProductTile({ label, name, desc, bgImage, delay }) {
         <Reveal
             delay={delay}
             as="article"
-            className="group relative h-[280px] overflow-hidden bg-[#1e2a3c] border-r border-white/[0.04] last:border-r-0 cursor-pointer"
+            className="group relative h-[280px] overflow-hidden bg-[#1e2a3c] border-b sm:border-b-0 sm:border-r border-white/[0.04] last:border-b-0 last:border-r-0 cursor-pointer"
         >
             {/* Background Image */}
             <img
@@ -40,7 +40,7 @@ function ProductTile({ label, name, desc, bgImage, delay }) {
 export default function ProductCategories() {
     return (
         <section className="bg-cream">
-            <div className="px-12 pt-16 pb-8 flex justify-between items-end">
+            <div className="px-4 md:px-8 lg:px-12 pt-12 md:pt-16 pb-6 md:pb-8 flex flex-col md:flex-row justify-between items-start md:items-end gap-4 md:gap-0">
                 <div>
                     <Reveal>
                         <p className="flex items-center gap-[10px] text-[10px] tracking-[0.22em] uppercase text-gold mb-[10px] before:content-[''] before:w-6 before:h-[0.5px] before:bg-gold">
@@ -63,7 +63,7 @@ export default function ProductCategories() {
                 </Reveal>
             </div>
 
-            <div className="grid grid-cols-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
                 {PRODUCT_CATEGORIES.map(({ id, label, name, desc, bgImage }, i) => (
                     <ProductTile key={id} label={label} name={name} desc={desc} bgImage={bgImage} delay={i * 100} />
                 ))}

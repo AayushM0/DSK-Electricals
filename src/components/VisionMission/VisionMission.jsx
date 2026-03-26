@@ -3,15 +3,15 @@ import { VISION_MISSION } from '@/constants/about'
 
 export default function VisionMission() {
     return (
-        <section className="bg-cream-dark py-[88px] px-12 grid grid-cols-2 gap-[2px] border-y border-border-cream">
+        <section className="bg-cream-dark py-16 md:py-[88px] px-4 md:px-8 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-[2px] border-y border-border-cream">
             {VISION_MISSION.map(({ id, number, type, title, text }, i) => (
                 <div
                     key={id}
-                    className="bg-cream px-12 py-[52px] first:border-r border-border-cream"
+                    className="bg-cream px-6 md:px-12 py-10 md:py-[52px] border-b md:border-b-0 md:first:border-r border-border-cream"
                 >
                     <Reveal delay={i * 100}>
                         <div
-                            className="font-serif text-[80px] font-bold leading-none mb-4 ghost-text-navy"
+                            className="font-serif text-[60px] md:text-[80px] font-bold leading-none mb-4 ghost-text-navy"
                             aria-hidden="true"
                         >
                             {number}

@@ -2,7 +2,7 @@ import Reveal from '@/components/Reveal'
 
 export default function QuickEnquiry() {
     return (
-        <section className="bg-cream-dark py-20 px-12 flex gap-20 items-center border-y border-[#d4c9b0]">
+        <section className="bg-cream-dark py-16 md:py-20 px-4 md:px-8 lg:px-12 flex flex-col lg:flex-row gap-10 lg:gap-20 items-start lg:items-center border-y border-[#d4c9b0]">
             <div className="flex-1">
                 <Reveal>
                     <p className="flex items-center gap-[10px] text-[10px] tracking-[0.22em] uppercase text-gold mb-[10px] before:content-[''] before:w-6 before:h-[0.5px] before:bg-gold">
@@ -29,7 +29,7 @@ export default function QuickEnquiry() {
                         window.open('https://wa.me/919289210000?text=hello%20i%20wanted%20to%20enquire%20about%20this', '_blank')
                     }}
                 >
-                    <div className="flex gap-3">
+                    <div className="flex flex-col sm:flex-row gap-3">
                         <input
                             type="text"
                             placeholder="Your Name *"

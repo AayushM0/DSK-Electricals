@@ -3,8 +3,8 @@ import { INFRASTRUCTURE_FEATURES } from '@/constants/about'
 
 export default function Infrastructure() {
     return (
-        <section className="py-[88px] px-12">
-            <div className="mb-12">
+        <section className="py-16 md:py-[88px] px-4 md:px-8 lg:px-12">
+            <div className="mb-10 md:mb-12">
                 <Reveal>
                     <p className="flex items-center gap-[10px] text-[10px] tracking-[0.22em] uppercase text-gold mb-[10px] before:content-[''] before:w-6 before:h-[0.5px] before:bg-gold">
                         How we operate
@@ -17,12 +17,12 @@ export default function Infrastructure() {
                 </Reveal>
             </div>
 
-            <div className="grid grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {INFRASTRUCTURE_FEATURES.map(({ id, icon, title, desc }, i) => (
                     <Reveal
                         key={id}
                         delay={i * 100}
-                        className="group relative border border-border-cream p-9 rounded-[2px] overflow-hidden transition-colors duration-250 hover:border-gold"
+                        className="group relative border border-border-cream p-6 md:p-9 rounded-[2px] overflow-hidden transition-colors duration-250 hover:border-gold"
                     >
                         {/* Top gold bar that scales on hover */}
                         <div

@@ -4,18 +4,18 @@ import wareImg from '@/assets/ware.png'
 
 export default function CompanyOverview() {
     return (
-        <section className="py-[88px] px-12 flex gap-[72px] items-center border-b border-border-cream">
+        <section className="py-16 md:py-[88px] px-4 md:px-8 lg:px-12 flex flex-col md:flex-row gap-10 md:gap-[72px] items-start md:items-center border-b border-border-cream">
 
             {/* Image container */}
             <Reveal
                 delay={100}
-                className="flex-1 min-h-[360px] rounded-[2px] relative overflow-hidden"
+                className="flex-1 w-full min-h-[260px] sm:min-h-[360px] rounded-[2px] relative overflow-hidden"
             >
                 {/* Actual Image */}
                 <img
                     src={wareImg}
                     alt="Warehouse Facility"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover absolute inset-0"
                 />
 
                 {/* Bottom gold accent bar */}
@@ -35,7 +35,7 @@ export default function CompanyOverview() {
 
                 <Reveal delay={100}>
                     <h2 className="font-serif text-[clamp(26px,3.5vw,38px)] font-semibold text-ink leading-[1.2] mb-[18px]">
-                        Built on reliability,<br />grown through trust
+                        Built on reliability,<br className="hidden sm:block" />grown through trust
                     </h2>
                 </Reveal>
 
@@ -54,7 +54,7 @@ export default function CompanyOverview() {
                 <Reveal delay={300}>
                     <Link
                         to="/products"
-                        className="mt-6 inline-flex items-center gap-2 text-[11px] tracking-[0.1em] uppercase text-navy no-underline transition-all duration-200 after:content-['→'] hover:gap-[14px] hover:text-gold"
+                        className="mt-4 sm:mt-6 inline-flex items-center gap-2 text-[11px] tracking-[0.1em] uppercase text-navy no-underline transition-all duration-200 after:content-['→'] hover:gap-[14px] hover:text-gold"
                     >
                         Explore Our Products
                     </Link>

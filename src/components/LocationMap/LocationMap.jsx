@@ -2,10 +2,10 @@ import { MAP_INFO } from '@/constants/contact'
 
 export default function LocationMap() {
     return (
-        <section className="px-12 py-16 bg-cream">
+        <section className="px-4 md:px-8 lg:px-12 py-10 md:py-16 bg-cream">
 
             {/* Heading */}
-            <div className="mb-8">
+            <div className="mb-8 pl-1">
                 <h2 className="font-serif text-[28px] text-ink mb-2">
                     Visit Our Location
                 </h2>
@@ -22,7 +22,7 @@ export default function LocationMap() {
             </div>
 
             {/* Map */}
-            <div className="w-full h-[420px] overflow-hidden rounded-[4px] shadow-md">
+            <div className="w-full h-[300px] sm:h-[420px] overflow-hidden rounded-[4px] shadow-md">
                 <iframe
                     src={MAP_INFO.embed}
                     width="100%"

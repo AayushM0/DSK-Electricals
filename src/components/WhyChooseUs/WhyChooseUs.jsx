@@ -16,11 +16,11 @@ function WhyTile({ icon, title, desc, delay }) {
 
 export default function WhyChooseUs() {
     return (
-        <section className="bg-navy py-20 px-12 relative overflow-hidden">
+        <section className="bg-navy py-16 md:py-20 px-4 md:px-8 lg:px-12 relative overflow-hidden">
             {/* Background subtle vertical rule */}
-            <div className="absolute right-20 inset-y-0 w-[0.5px] bg-white/5" aria-hidden="true" />
+            <div className="hidden md:block absolute right-20 inset-y-0 w-[0.5px] bg-white/5" aria-hidden="true" />
 
-            <div className="mb-12 relative z-10">
+            <div className="mb-10 md:mb-12 relative z-10">
                 <Reveal>
                     <p className="flex items-center gap-[10px] text-[10px] tracking-[0.22em] uppercase text-gold mb-[10px] before:content-[''] before:w-6 before:h-[0.5px] before:bg-gold">
                         What sets us apart
@@ -33,7 +33,7 @@ export default function WhyChooseUs() {
                 </Reveal>
             </div>
 
-            <div className="grid grid-cols-3 gap-6 relative z-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
                 {WHY_TILES.map(({ id, icon, title, desc }, i) => (
                     <WhyTile key={id} icon={icon} title={title} desc={desc} delay={(i % 3) * 100} />
                 ))}

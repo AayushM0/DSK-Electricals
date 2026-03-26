@@ -25,7 +25,7 @@ const BRAND_LOGOS = {
 
 export default function BrandsGrid() {
     return (
-        <section className="py-20 px-12">
+        <section className="py-16 md:py-20 px-4 md:px-8 lg:px-12">
             <div className="mb-12">
                 <Reveal>
                     <p className="flex items-center gap-[10px] text-[10px] tracking-[0.22em] uppercase text-gold mb-[10px] before:content-[''] before:w-6 before:h-[0.5px] before:bg-gold">
@@ -40,12 +40,12 @@ export default function BrandsGrid() {
                 </Reveal>
             </div>
 
-            <div className="grid grid-cols-4 gap-px bg-border-cream mb-12">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-px bg-border-cream mb-12">
                 {BRANDS_LIST.map(({ id, name, category }, i) => (
                     <Reveal
                         key={id}
                         delay={(i % 4) * 100}
-                        className="group bg-cream p-8 pb-10 flex flex-col items-center justify-center text-center cursor-pointer relative overflow-hidden transition-colors duration-200 hover:bg-white"
+                        className="group bg-cream p-4 sm:p-8 pb-6 sm:pb-10 flex flex-col items-center justify-center text-center cursor-pointer relative overflow-hidden transition-colors duration-200 hover:bg-white"
                     >
                         {/* Bottom gold bar */}
                         <div
@@ -54,7 +54,7 @@ export default function BrandsGrid() {
                         />
 
                         {/* Logo */}
-                        <div className="w-[120px] h-[52px] mb-3.5 flex items-center justify-center transition-all duration-300 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100">
+                        <div className="w-full max-w-[120px] h-[36px] sm:h-[52px] mb-3.5 flex items-center justify-center transition-all duration-300 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100">
                             <img
                                 src={BRAND_LOGOS[name]}
                                 alt={name}
@@ -63,12 +63,12 @@ export default function BrandsGrid() {
                         </div>
 
                         {/* Brand Name */}
-                        <div className="font-sans text-[12px] text-[#8a7a60] tracking-[0.06em] transition-colors duration-200 group-hover:text-navy">
+                        <div className="font-sans text-[11px] sm:text-[12px] text-[#8a7a60] tracking-[0.06em] transition-colors duration-200 group-hover:text-navy">
                             {name}
                         </div>
 
                         {/* Category */}
-                        <div className="font-sans text-[10px] text-[#aaa090] mt-1">
+                        <div className="font-sans text-[9px] sm:text-[10px] text-[#aaa090] mt-1 hidden sm:block">
                             {category}
                         </div>
                     </Reveal>

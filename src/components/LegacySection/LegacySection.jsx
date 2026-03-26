@@ -21,7 +21,7 @@ function StatCounter({ target, label, delay }) {
 
 export default function LegacySection() {
     return (
-        <section className="bg-cream py-24 px-12 py-[100px] flex justify-end relative overflow-hidden border-t border-border-cream">
+        <section className="bg-cream px-4 md:px-8 lg:px-12 py-16 md:py-[100px] flex justify-start md:justify-end relative overflow-hidden border-t border-border-cream">
             {/* Ghost oversized text */}
             <div className="absolute font-serif text-[clamp(100px,20vw,260px)] font-bold left-[-20px] top-1/2 -translate-y-1/2 pointer-events-none whitespace-nowrap leading-none z-0 ghost-text-cream" aria-hidden="true">
                 TRUST
@@ -46,7 +46,7 @@ export default function LegacySection() {
                     </p>
                 </Reveal>
 
-                <div className="flex gap-10">
+                <div className="flex flex-wrap gap-8 md:gap-10">
                     {LEGACY_STATS.map(({ id, target, label }, i) => (
                         <StatCounter key={id} target={target} label={label} delay={(i + 2) * 100} />
                     ))}

@@ -3,8 +3,8 @@ import { NAV_LINKS } from '@/constants/home'
 
 export default function Footer() {
     return (
-        <footer className="bg-navy-deep px-12 pt-16 pb-7">
-            <div className="grid grid-cols-[1.6fr_1fr_1fr_1.3fr] gap-12 pb-12 border-b border-white/[0.07] mb-7">
+        <footer className="bg-navy-deep px-4 md:px-8 lg:px-12 pt-16 pb-7">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1.3fr] gap-10 lg:gap-12 pb-12 border-b border-white/[0.07] mb-7">
 
                 {/* Brand */}
                 <div>
@@ -61,7 +61,7 @@ export default function Footer() {
             </div>
 
             {/* Bottom Bar */}
-            <div className="flex justify-between items-center text-[11px] text-[#1e2e3e] tracking-[0.04em]">
+            <div className="flex flex-col sm:flex-row gap-4 justify-between items-center text-center sm:text-left text-[11px] text-[#1e2e3e] tracking-[0.04em]">
                 <p>© {new Date().getFullYear()} DSK Electricals Pvt. Ltd. All Rights Reserved.</p>
                 <p>GST No: XXXXXXXXXXXXXXX</p>
             </div>
