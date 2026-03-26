@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'DM Sans', sans-serif;
+  --font-serif: 'Cormorant Garamond', serif;
+
+  /* Brand palette */
+  --color-cream: #f5f0e8;
+  --color-cream-dark: #e8e0d0;
+  --color-navy: #1a2a4a;
+  --color-navy-mid: #1a1a2e;
+  --color-navy-deep: #0f1a2e;
+  --color-gold: #c4a96a;
+  --color-gold-light: #d4be8a;
+  --color-ink: #1a2a3a;
+  --color-muted: #6a5f50;
+  --color-on-dark: #f0ead8;
+  --color-dim: #8a9aaa;
+  --color-border-cream: #d4c9b0;
+  --color-border-navy: #2a3a5a;
+}
+
+/* User-specified variable names for reference */
+:root {
+  --color-bg-cream: #f5f0e8;
+  --color-bg-dark: #1a2a4a;
+  --color-bg-deeper: #0f1a2e;
+  --color-accent-gold: #c4a96a;
+  --color-text-primary: #1a2a3a;
+  --color-text-muted: #6a5f50;
+  --color-text-on-dark: #f0ead8;
+}
+
+/* Keyframes */
+@keyframes ghostDrift {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-30px);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom utilities — only for things Tailwind cannot express */
+@layer utilities {
+
+  /* Ghost outline text */
+  .ghost-text-white {
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.055);
+  }
+
+  .ghost-text-cream {
+    color: transparent;
+    -webkit-text-stroke: 1px #ddd4be;
+  }
+
+  .ghost-text-gold {
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(196, 169, 106, 0.25);
+  }
+
+  /* Hover state for ghost tile numbers via group */
+  .group:hover .tile-ghost-num {
+    -webkit-text-stroke-color: rgba(196, 169, 106, 0.5);
+  }
+
+  .tile-ghost-num {
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(196, 169, 106, 0.25);
+    transition: -webkit-text-stroke-color 0.3s;
+  }
+
+  /* CSS animations */
+  .animate-ghost-drift {
+    animation: ghostDrift 18s ease-in-out infinite alternate;
+  }
+
+  .animate-fade-up {
+    animation: fadeUp 0.8s both;
+  }
+
+  .anim-delay-1 {
+    animation-delay: 0.2s;
+  }
+
+  .anim-delay-2 {
+    animation-delay: 0.4s;
+  }
+
+  .anim-delay-3 {
+    animation-delay: 0.6s;
+  }
+
+  .anim-delay-4 {
+    animation-delay: 0.8s;
+  }
+
+  .anim-delay-5 {
+    animation-delay: 1.2s;
+  }
+
+  /* Complex directional gradients */
+  .hero-overlay {
+    background: linear-gradient(105deg, #1a2a4a 38%, rgba(26, 42, 74, 0.85) 58%, rgba(26, 42, 74, 0.1) 100%);
+  }
+
+  .tile-overlay {
+    background: linear-gradient(to top, rgba(10, 18, 32, 0.95) 35%, rgba(10, 18, 32, 0.3) 80%, transparent 100%);
+  }
+}
