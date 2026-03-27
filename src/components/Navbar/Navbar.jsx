@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import { NAV_LINKS } from '@/constants/home'
 import { cn } from '@/utils/cn'
 
@@ -74,12 +74,12 @@ export default function Navbar() {
                 </ul>
 
                 <div className="flex items-center gap-4">
-                    <button
-                        type="button"
-                        className="hidden sm:block bg-navy text-on-dark text-[11px] tracking-[0.1em] uppercase px-[22px] py-[10px] rounded-[2px] transition-colors duration-200 hover:bg-gold hover:text-navy-deep"
+                    <Link
+                        to="/contact#enquiry"
+                        className="hidden sm:block bg-navy text-on-dark text-[11px] tracking-[0.1em] uppercase px-[22px] py-[10px] rounded-[2px] transition-colors duration-200 hover:bg-gold hover:text-navy-deep no-underline"
                     >
                         Enquire Now
-                    </button>
+                    </Link>
 
                     <button
                         type="button"
@@ -116,12 +116,13 @@ export default function Navbar() {
                                 </li>
                             ))}
                         </ul>
-                        <button
-                            type="button"
-                            className="w-full sm:hidden bg-navy text-on-dark text-[12px] tracking-[0.1em] uppercase px-[22px] py-[12px] rounded-[2px]"
+                        <Link
+                            to="/contact#enquiry"
+                            onClick={() => setIsMenuOpen(false)}
+                            className="w-full sm:hidden bg-navy text-on-dark text-[12px] tracking-[0.1em] uppercase px-[22px] py-[12px] rounded-[2px] text-center no-underline"
                         >
                             Enquire Now
-                        </button>
+                        </Link>
                     </div>
                 )}
             </nav>

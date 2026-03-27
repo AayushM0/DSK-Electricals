@@ -41,8 +41,8 @@ export default function Footer() {
                     <address className="not-italic text-[13.5px] text-white/80 leading-[1.9] flex flex-col gap-1.5">
                         <p>📍 DSK ELECTRICALS LIMITED
                             Add: office no.1, floor no.1, PLOT no.1, Thakran market, Near Ocus Quantum Mall, Samaspur, Gurugram, Haryana,<br />City — 122003</p>
-                        <p>📞 +91 8510994440</p>
-                        <p>📠 +91 9289210000</p>
+                        <p>📞 +91 9289210000</p>
+                        <p>📞 +91 9289250000</p>
                         <p>✉ dsk300411@gmail.com</p>
                     </address>
                 </div>

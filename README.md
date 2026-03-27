@@ -13,7 +13,7 @@ A modern, high-performance commercial website for DSK Electricals, built with Re
 
 ## 📁 Project Structure
 
-The project follows a strict architectural pattern as defined in `AGENT_GUIDELINES.md`:
+The project follows a strict architectural pattern :
 
 ```text
 src/
@@ -68,7 +68,3 @@ npm run preview
 - **Performance Optimized:** Lazy-loading for all page routes and optimized asset handling.
 - **Modern UI/UX:** Clean, commercial-grade interface with smooth transitions.
 - **Accessibility:** Semantic HTML and ARIA best practices.
-
-## 📜 Guidelines
-
-Refer to `AGENT_GUIDELINES.md` for detailed coding standards, naming conventions, and architectural rules used in this project.

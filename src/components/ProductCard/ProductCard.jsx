@@ -5,6 +5,7 @@ export default function ProductCard({
     name,
     specs,
     tags,
+    image,
     imagePlaceholder,
     delay = 0
 }) {
@@ -14,8 +15,16 @@ export default function ProductCard({
             className="group bg-white border border-border-cream rounded-[2px] overflow-hidden transition-all duration-250 cursor-pointer hover:border-gold hover:-translate-y-[3px] hover:shadow-[0_8px_32px_rgba(26,42,74,0.08)]"
         >
             {/* Image Block */}
-            <div className="h-[160px] bg-[#e8e2d8] flex items-center justify-center text-[11px] text-[#9a8f7a] tracking-[0.08em] relative overflow-hidden">
-                {imagePlaceholder}
+            <div className="h-[200px] bg-[#fdfaf5] flex items-center justify-center relative overflow-hidden">
+                {image ? (
+                    <img
+                        src={image}
+                        alt={name}
+                        className="w-full h-full object-contain p-4 transition-transform duration-500 group-hover:scale-105"
+                    />
+                ) : (
+                    <span className="text-[11px] text-[#9a8f7a] tracking-[0.08em]">{imagePlaceholder}</span>
+                )}
 
                 {/* Animated bottom gold bar */}
                 <div

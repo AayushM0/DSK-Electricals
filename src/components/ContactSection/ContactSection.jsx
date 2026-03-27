@@ -1,9 +1,22 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Reveal from '@/components/Reveal'
 import { CONTACT_INFO } from '@/constants/contact'
 
 export default function ContactSection() {
     const phone = "9289210000"
+
+    // Handle anchor scrolling
+    useEffect(() => {
+        if (window.location.hash === '#enquiry') {
+            const el = document.getElementById('enquiry')
+            if (el) {
+                // Small timeout to ensure component is fully rendered
+                setTimeout(() => {
+                    el.scrollIntoView({ behavior: 'smooth' })
+                }, 100)
+            }
+        }
+    }, [])
 
     const [formData, setFormData] = useState({
         name: '',
@@ -52,7 +65,7 @@ ${formData.details || 'N/A'}
     }
 
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.3fr] min-h-[560px]">
+        <div id="enquiry" className="grid grid-cols-1 lg:grid-cols-[1fr_1.3fr] min-h-[560px] scroll-mt-20">
 
             {/* LEFT: DETAILS */}
             <div className="bg-navy py-16 md:py-[72px] px-4 md:px-8 lg:px-12 relative overflow-hidden">
