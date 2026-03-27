@@ -1,11 +1,9 @@
 export const BRANDS_LIST = [
-    { id: 1, name: 'Finolex', category: 'Wires & Cables' },
-    { id: 2, name: 'Havells', category: 'Switchgear & MCBs' },
-    { id: 3, name: 'Polycab', category: 'Power Cables' },
+    { id: 2, name: 'AKG & Polypack', category: 'PVC pipes and fittings' },
+    { id: 3, name: 'Polycab', category: 'Power Cables & Swicthes' },
     { id: 4, name: 'Anchor', category: 'Wires & Accessories' },
-    { id: 5, name: 'RR Kabel', category: 'Flexible Cables' },
     { id: 6, name: 'KEI Industries', category: 'Control Cables' },
-    { id: 7, name: 'Astral', category: 'Conduits & Fittings' },
+    { id: 7, name: 'Norpack', category: 'PVC Pipes & Fittings' },
     { id: 8, name: 'Dowells', category: 'Connectors & Lugs' },
 ]
 

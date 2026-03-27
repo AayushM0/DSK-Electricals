@@ -2,24 +2,20 @@ import Reveal from '@/components/Reveal'
 import { BRANDS_LIST } from '@/constants/brands'
 
 // Import brand logos
-import finolex from '@/assets/finolex.webp'
-import havells from '@/assets/havells.webp'
+import akg from '@/assets/akg.jpeg'
+import norpack from '@/assets/norpack.jpeg'
 import polycab from '@/assets/polycab.webp'
 import anchor from '@/assets/anchor.webp'
-import rrKabel from '@/assets/rr-kabel.webp'
 import kei from '@/assets/kei.webp'
-import supreme from '@/assets/astral.jpg'
 import dowells from '@/assets/dowell.png'
 
 // Map brand names to images
 const BRAND_LOGOS = {
-    'Finolex': finolex,
-    'Havells': havells,
+    'AKG & Polypack': akg,
     'Polycab': polycab,
     'Anchor': anchor,
-    'RR Kabel': rrKabel,
     'KEI Industries': kei,
-    'Astral': supreme,
+    'Norpack': norpack,
     'Dowells': dowells,
 }
 
@@ -40,7 +36,7 @@ export default function BrandsGrid() {
                 </Reveal>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-px bg-border-cream mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8 mb-12">
                 {BRANDS_LIST.map(({ id, name, category }, i) => (
                     <Reveal
                         key={id}

@@ -7,7 +7,7 @@ function ProductTile({ label, name, desc, bgImage, delay }) {
         <Reveal
             delay={delay}
             as="article"
-            className="group relative h-[280px] overflow-hidden bg-[#31508f] border-b sm:border-b-0 sm:border-r border-white/[0.04] last:border-b-0 last:border-r-0 cursor-pointer"
+            className="group relative h-[280px] overflow-hidden bg-navy border-b sm:border-b-0 sm:border-r border-white/[0.04] last:border-b-0 last:border-r-0 cursor-pointer"
         >
             {/* Background Image */}
             <img

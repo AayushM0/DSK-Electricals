@@ -14,7 +14,7 @@ export default function Footer() {
                     <p className="text-[13.5px] text-white/80 leading-[1.9] mb-[18px]">
                         Electrical distributors serving contractors, industries and dealers. Stocking the best brands at the best prices with same-day dispatch.
                     </p>
-                    <span className="inline-block border border-[#31508f] px-3 py-[5px] text-[10px] tracking-[0.14em] uppercase text-white/70 rounded-[2px]">
+                    <span className="inline-block border border-white/10 px-3 py-[5px] text-[10px] tracking-[0.14em] uppercase text-white/70 rounded-[2px]">
                         GST Registered · ISI Certified Products
                     </span>
                 </div>

@@ -7,26 +7,26 @@
   /* Brand palette */
   --color-cream: #f5f0e8;
   --color-cream-dark: #e8e0d0;
-  --color-navy: #31508f;
-  --color-navy-mid: #253c6a;
-  --color-navy-deep: #19418c;
+  --color-navy: #0F1A2E;
+  --color-navy-mid: #1A2A4A;
+  --color-navy-deep: #0B1221;
   --color-gold: #c4a96a;
   --color-gold-light: #d4be8a;
-  --color-ink: #31567a;
+  --color-ink: #050a14;
   --color-muted: #6a5f50;
   --color-on-dark: #f0ead8;
   --color-dim: #8a9aaa;
   --color-border-cream: #d4c9b0;
-  --color-border-navy: #4a6cb3;
+  --color-border-navy: #1a2b4b;
 }
 
 /* User-specified variable names for reference */
 :root {
   --color-bg-cream: #f5f0e8;
-  --color-bg-dark: #31508f;
-  --color-bg-deeper: #19418c;
+  --color-bg-dark: #0F1A2E;
+  --color-bg-deeper: #0B1221;
   --color-accent-gold: #c4a96a;
-  --color-text-primary: #31567a;
+  --color-text-primary: #050a14;
   --color-text-muted: #6a5f50;
   --color-text-on-dark: #f0ead8;
 }
@@ -115,10 +115,10 @@
 
   /* Complex directional gradients */
   .hero-overlay {
-    background: linear-gradient(105deg, #31508f 38%, rgba(49, 80, 143, 0.85) 58%, rgba(49, 80, 143, 0.1) 100%);
+    background: linear-gradient(105deg, #0F1A2E 38%, rgba(15, 26, 46, 0.85) 58%, rgba(15, 26, 46, 0.1) 100%);
   }
 
   .tile-overlay {
-    background: linear-gradient(to top, rgba(25, 65, 140, 0.8) 35%, rgba(25, 65, 140, 0.2) 80%, transparent 100%);
+    background: linear-gradient(to top, rgba(15, 26, 46, 0.8) 35%, rgba(15, 26, 46, 0.2) 80%, transparent 100%);
   }
 }
