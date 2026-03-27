@@ -27,13 +27,13 @@ export default function PageBanner({
 
             {/* Content */}
             <div className="relative z-10">
-                <div className="text-[11px] text-[#3a5a7a] tracking-[0.1em] mb-5">
+                <div className="text-[12px] text-white/70 tracking-[0.1em] mb-5">
                     Home &nbsp;/&nbsp;{" "}
                     <span className="text-gold">{breadcrumb}</span>
                 </div>
 
                 <h1
-                    className="font-serif text-[clamp(36px,6vw,64px)] font-semibold text-on-dark leading-[1.1]"
+                    className="font-serif text-[clamp(32px,5vw,52px)] font-bold text-on-dark leading-tight"
                     dangerouslySetInnerHTML={{ __html: title }}
                 />
 

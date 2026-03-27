@@ -22,7 +22,7 @@ export const CONTACT_INFO = {
 }
 
 export const MAP_INFO = {
-    name: 'DSK Electricals',
+    name: 'DSK Electricals Limited',
 
     address:
         'Office No. 1, 1st Floor, Plot No. 1, Thakran Market, Near Ocus Quantum Mall, Samaspur, Gurugram, Haryana 122003',

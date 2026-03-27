@@ -44,8 +44,8 @@ export default function BrandsGrid() {
                 {BRANDS_LIST.map(({ id, name, category }, i) => (
                     <Reveal
                         key={id}
-                        delay={(i % 4) * 100}
-                        className="group bg-cream p-4 sm:p-8 pb-6 sm:pb-10 flex flex-col items-center justify-center text-center cursor-pointer relative overflow-hidden transition-colors duration-200 hover:bg-white"
+                        delay={(i % 12) * 50}
+                        className="group bg-white border border-border-cream p-4 sm:p-5 rounded-[3px] flex flex-col items-center text-center shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
                     >
                         {/* Bottom gold bar */}
                         <div
@@ -63,12 +63,12 @@ export default function BrandsGrid() {
                         </div>
 
                         {/* Brand Name */}
-                        <div className="font-sans text-[11px] sm:text-[12px] text-[#8a7a60] tracking-[0.06em] transition-colors duration-200 group-hover:text-navy">
+                        <div className="font-sans text-[12px] sm:text-[13.5px] text-[#8a7a60] tracking-[0.06em] transition-colors duration-200 group-hover:text-navy">
                             {name}
                         </div>
 
                         {/* Category */}
-                        <div className="font-sans text-[9px] sm:text-[10px] text-[#aaa090] mt-1 hidden sm:block">
+                        <div className="font-sans text-[10px] sm:text-[11px] text-[#aaa090] mt-1 hidden sm:block">
                             {category}
                         </div>
                     </Reveal>

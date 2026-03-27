@@ -3,7 +3,7 @@ import { INFRASTRUCTURE_FEATURES } from '@/constants/about'
 
 export default function Infrastructure() {
     return (
-        <section className="py-16 md:py-[88px] px-4 md:px-8 lg:px-12">
+        <section className="bg-cream py-16 md:py-[88px] px-4 md:px-8 lg:px-12 border-t border-border-cream">
             <div className="mb-10 md:mb-12">
                 <Reveal>
                     <p className="flex items-center gap-[10px] text-[10px] tracking-[0.22em] uppercase text-gold mb-[10px] before:content-[''] before:w-6 before:h-[0.5px] before:bg-gold">
@@ -22,7 +22,7 @@ export default function Infrastructure() {
                     <Reveal
                         key={id}
                         delay={i * 100}
-                        className="group relative border border-border-cream p-6 md:p-9 rounded-[2px] overflow-hidden transition-colors duration-250 hover:border-gold"
+                        className="group relative bg-white p-6 md:p-9 rounded-[3px] shadow-[0_15px_40px_rgba(0,0,0,0.06)] border border-border-cream overflow-hidden transition-all duration-300 hover:border-gold hover:-translate-y-1.5"
                     >
                         {/* Top gold bar that scales on hover */}
                         <div

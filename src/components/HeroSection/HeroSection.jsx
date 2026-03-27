@@ -6,11 +6,11 @@ export default function HeroSection() {
         <section className="relative flex min-h-[560px] h-[92vh] items-center overflow-hidden bg-navy">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
-                <img src={wireBg} alt="" className="w-full h-full object-cover opacity-[0.35] mix-blend-luminosity" aria-hidden="true" />
+                <img src={wireBg} alt="" className="w-full h-full object-cover opacity-[0.55]" aria-hidden="true" />
             </div>
 
             {/* Directional gradient overlay */}
-            <div className="absolute inset-0 z-10 bg-gradient-to-r from-navy/95 via-navy/60 to-transparent" aria-hidden="true" />
+            <div className="absolute inset-0 z-10 bg-gradient-to-r from-navy/80 via-navy/40 to-transparent" aria-hidden="true" />
 
             {/* Ghost oversized word */}
             <p
@@ -22,16 +22,16 @@ export default function HeroSection() {
 
             {/* Main content */}
             <div className="relative z-20 px-4 md:px-8 lg:px-12 max-w-[580px]">
-                <p className="flex items-center gap-3 text-[10px] tracking-[0.22em] uppercase text-gold mb-5 before:content-[''] before:w-8 before:h-[0.5px] before:bg-gold animate-fade-up anim-delay-1">
+                <p className="flex items-center gap-3 text-[11px] tracking-[0.22em] uppercase text-gold mb-5 before:content-[''] before:w-8 before:h-[0.5px] before:bg-gold animate-fade-up anim-delay-1">
                     Trusted · Pan-India Distribution
                 </p>
 
-                <h1 className="font-serif text-[clamp(40px,6vw,64px)] font-semibold leading-[1.12] text-on-dark mb-5 animate-fade-up anim-delay-2">
+                <h1 className="font-serif text-[clamp(44px,7vw,70px)] font-semibold leading-[1.12] text-on-dark mb-5 animate-fade-up anim-delay-2">
                     Wires &amp; Cables<br />
                     Built to <em className="not-italic text-gold">Last Decades</em>
                 </h1>
 
-                <p className="text-[14px] text-dim leading-[1.8] mb-9 max-w-[380px] animate-fade-up anim-delay-3">
+                <p className="text-[15.5px] text-white/80 leading-[1.8] mb-9 max-w-[380px] animate-fade-up anim-delay-3">
                     Supplying quality electrical products to contractors, dealers and industries across the region.
                 </p>
 
@@ -44,7 +44,7 @@ export default function HeroSection() {
                     </Link>
                     <Link
                         to="/contact"
-                        className="border border-white/20 text-[#b0b8c4] text-[11px] tracking-[0.1em] uppercase px-7 py-[13px] rounded-[2px] transition-colors duration-200 hover:border-gold hover:text-gold"
+                        className="border border-white/20 text-[#d0d8e4] text-[11px] tracking-[0.1em] uppercase px-7 py-[13px] rounded-[2px] transition-colors duration-200 hover:border-gold hover:text-gold"
                     >
                         Get a Quote
                     </Link>
@@ -52,8 +52,8 @@ export default function HeroSection() {
             </div>
 
             {/* Scroll indicator */}
-            <p className="absolute bottom-7 left-4 md:left-12 z-20 flex items-center gap-[10px] text-[10px] tracking-[0.14em] uppercase text-[#3a5a7a] animate-fade-up anim-delay-5">
-                <span className="w-10 h-[0.5px] bg-[#3a5a7a]" aria-hidden="true" />
+            <p className="absolute bottom-7 left-4 md:left-12 z-20 flex items-center gap-[10px] text-[11px] tracking-[0.14em] uppercase text-on-dark animate-fade-up anim-delay-5">
+                <span className="w-10 h-[0.5px] bg-on-dark" aria-hidden="true" />
                 Scroll
             </p>
         </section>

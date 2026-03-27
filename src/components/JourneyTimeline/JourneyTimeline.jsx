@@ -12,11 +12,11 @@ function TimelineItem({ title, desc, delay }) {
             {/* Mobile vertical line */}
             <div className="md:hidden absolute top-6 bottom-[-16px] left-[7px] w-[0.5px] bg-white/10" aria-hidden="true" />
 
-            <h3 className="font-serif text-[18px] font-semibold text-on-dark mb-2">
+            <h3 className="font-serif text-[20px] font-semibold text-on-dark mb-2">
                 {title}
             </h3>
 
-            <p className="font-sans text-[12px] text-[#3a5a7a] leading-[1.8]">
+            <p className="font-sans text-[13.5px] text-white/90 leading-[1.8]">
                 {desc}
             </p>
         </Reveal>
@@ -36,12 +36,12 @@ export default function JourneyTimeline() {
 
             <div className="relative z-10 mb-10 md:mb-14">
                 <Reveal>
-                    <p className="flex items-center gap-[10px] text-[10px] tracking-[0.22em] uppercase text-gold mb-[10px] before:content-[''] before:w-6 before:h-[0.5px] before:bg-gold">
+                    <p className="flex items-center gap-[10px] text-[11px] tracking-[0.22em] uppercase text-gold mb-[10px] before:content-[''] before:w-6 before:h-[0.5px] before:bg-gold">
                         Our journey
                     </p>
                 </Reveal>
                 <Reveal delay={100}>
-                    <h2 className="font-serif text-[clamp(28px,4vw,42px)] font-semibold text-on-dark leading-[1.15]">
+                    <h2 className="font-serif text-[clamp(30px,5vw,46px)] font-semibold text-on-dark leading-[1.15]">
                         From vision to where we stand today
                     </h2>
                 </Reveal>

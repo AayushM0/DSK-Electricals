@@ -10,21 +10,30 @@ export default function Navbar() {
         <header>
             {/* Topbar — bg navy-mid, scrolls away */}
             <div className="bg-navy-mid px-4 md:px-12 py-[7px] flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0">
-                <div className="flex gap-4 sm:gap-7 text-[10px] sm:text-[11px] text-[#7a8a9a] tracking-[0.04em]">
+                <div className="flex gap-4 sm:gap-7 text-[11px] sm:text-[12px] text-white/95 tracking-[0.04em]">
                     <span>📞 +91 9289210000</span>
                     <span>✉ dsk300411@gmail.com</span>
                 </div>
                 <div className="flex gap-2 hidden sm:flex" aria-label="Social media links">
-                    {['f', 'ig'].map((s) => (
-                        <a
-                            key={s}
-                            href="#"
-                            aria-label={s}
-                            className="w-[22px] h-[22px] border border-border-navy rounded-[3px] grid place-items-center text-[10px] text-[#5a7a9a] no-underline transition-colors duration-200 hover:border-gold hover:text-gold"
-                        >
-                            {s}
-                        </a>
-                    ))}
+
+                    <a
+                        href="https://www.linkedin.com/in/dsk-electricals-limited-a64a223b9?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                        aria-label="linkedin"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-[24px] h-[24px] border border-border-navy rounded-[3px] grid place-items-center text-[11px] text-white/90 no-underline transition-colors duration-200 hover:border-gold hover:text-gold"
+                    >
+                        in
+                    </a>
+                    <a
+                        href="https://www.instagram.com/dsk131001?igsh=MWhmazEyOGc5cG53cA=="
+                        aria-label="instagram"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-[22px] h-[22px] border border-border-navy rounded-[3px] grid place-items-center text-[10px] text-[#5a7a9a] no-underline transition-colors duration-200 hover:border-gold hover:text-gold"
+                    >
+                        ig
+                    </a>
                 </div>
             </div>
 
@@ -34,15 +43,15 @@ export default function Navbar() {
                 aria-label="Main navigation"
             >
                 <div className="flex flex-col gap-[2px]">
-                    <span className="font-serif text-[18px] sm:text-[20px] font-bold text-navy tracking-[0.06em] leading-none">
-                        DSK ELECTRICALS
+                    <span className="font-serif text-[22px] sm:text-[25px] font-bold text-navy tracking-[0.06em] leading-none">
+                        DSK ELECTRICALS LIMITED
                     </span>
-                    <span className="text-[8px] sm:text-[9px] text-[#8a7a60] tracking-[0.16em] uppercase">
+                    <span className="text-[10px] sm:text-[11px] text-[#8a7a60] tracking-[0.16em] uppercase">
                         Electrical Distributors
                     </span>
                 </div>
 
-                <ul className="hidden lg:flex gap-9 text-[12px] tracking-[0.06em] text-[#4a4030] list-none" role="list">
+                <ul className="hidden lg:flex gap-9 text-[13.5px] tracking-[0.06em] text-[#4a4030] list-none" role="list">
                     {NAV_LINKS.map(({ label, href }) => (
                         <li key={href}>
                             <NavLink

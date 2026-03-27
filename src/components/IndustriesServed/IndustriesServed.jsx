@@ -15,17 +15,17 @@ export default function IndustriesServed() {
                 </h2>
             </Reveal>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-px bg-white/5">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
                 {INDUSTRIES_SERVED.map(({ id, icon, name }, i) => (
                     <Reveal
                         key={id}
                         delay={i * 100}
-                        className="bg-navy px-4 md:px-5 py-6 md:py-8 text-center transition-colors duration-200 cursor-default hover:bg-white/[0.03]"
+                        className="bg-white px-4 md:px-5 py-6 md:py-8 rounded-[3px] shadow-lg text-center transition-all duration-300 cursor-default hover:-translate-y-1 hover:shadow-xl group"
                     >
                         <div className="text-[24px] md:text-[28px] mb-3" aria-hidden="true">
                             {icon}
                         </div>
-                        <div className="text-[11px] md:text-[12px] text-[#5a7a9a] tracking-[0.06em]">
+                        <div className="text-[12px] md:text-[13px] font-semibold text-navy tracking-[0.06em] transition-colors duration-200 group-hover:text-gold">
                             {name}
                         </div>
                     </Reveal>
