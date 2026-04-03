@@ -11,7 +11,7 @@ import dowells from '@/assets/dowell.png'
 
 // Map brand names to images
 const BRAND_LOGOS = {
-    'AKG & Polypack': akg,
+    'AKG Pipes': akg,
     'Polycab': polycab,
     'Anchor': anchor,
     'KEI Industries': kei,

@@ -1,5 +1,5 @@
 export const BRANDS_LIST = [
-    { id: 2, name: 'AKG & Polypack', category: 'PVC pipes and fittings' },
+    { id: 2, name: 'AKG Pipes', category: 'PVC pipes and fittings' },
     { id: 3, name: 'Polycab', category: 'Power Cables & Swicthes' },
     { id: 4, name: 'Anchor', category: 'Wires & Accessories' },
     { id: 6, name: 'KEI Industries', category: 'Control Cables' },
